@@ -85,8 +85,6 @@
    <modules>
       <!--  core plugins  -->
       <module>platform</module>
-      <module>rhq-agent</module>
-      <module>jmx</module>
    </modules>
 
   <profiles>
@@ -101,15 +99,6 @@
 
         <modules>
            <!--  NOTE: Order is important. -->
-           <module>augeas</module>
-           <module>apache</module>
-           <module>tomcat</module>
-           <module>jboss-as</module>
-           <module>hibernate</module>
-           <module>rhq-server</module>
-           <module>jboss-cache</module>
-           <module>jboss-as-5</module>
-           <module>jboss-cache-v3</module>
            <!--  was not in Jopr build at merge time <module>jbossOSGi</module>  -->
         </modules>
     </profile>
@@ -123,8 +112,6 @@
          </activation>
 
         <modules>
-           <module>filetemplate-bundle</module>
-           <module>ant-bundle</module>
         </modules>
     </profile>
 
@@ -137,19 +124,6 @@
          </activation>
 
         <modules>
-           <module>augeas</module>
-           <module>cron</module>
-           <module>script</module>
-           <module>grub</module>
-           <!-- not behaving       <module>hardware</module> -->
-           <module>hosts</module>
-           <module>cobbler</module>
-           <module>sudoers</module>
-           <module>netservices</module>
-           <module>samba</module>
-           <module>postfix</module>
-           <module>aliases</module>
-           <module>sshd</module>
         </modules>
     </profile>
 
@@ -160,7 +134,6 @@
             <jdk>[1.6,)</jdk>
         </activation>
         <modules>
-            <module>script2</module>
         </modules>
     </profile>
 
@@ -170,9 +143,6 @@
             <jdk>[1.6,)</jdk>
         </activation>
         <modules>
-            <module>virt</module>
-            <module>kickstart</module>
-            <module>byteman</module>
         </modules>
 
     </profile>
@@ -187,17 +157,6 @@
          </activation>
 
         <modules>
-           <module>iis</module>
-           <module>database</module>
-           <module>postgres</module>
-           <module>hudson</module>
-           <!-- error in code generation (see RHQ-1225)  <module>jira</module> -->
-           <module>mysql</module>
-           <!-- non-public dependency        <module>onewire</module> -->
-           <module>oracle</module>
-           <module>perftest</module>
-           <module>snmptrapd</module>
-           <module>twitter</module>
         </modules>
     </profile>
 
@@ -211,7 +170,6 @@
 
         <modules>
            <!-- make this the last - it will validate all the plugins -->
-           <module>validate-all-plugins</module>
         </modules>
     </profile>
 
